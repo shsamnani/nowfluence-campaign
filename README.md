@@ -2,7 +2,7 @@
 A basic one page application to showcase tailwind and UI designing skills
 
 ## How to run?
-- Simply clone the repo using `git clone https://github.com/shsamnani/nowfluence-campaign.git"` or download as zip and extract the zip file
+- Simply clone the repo using `git clone https://github.com/shsamnani/nowfluence-campaign.git` or download as zip and extract the zip file
 - Run `index.html`
 
 ## What's here to showcase?
