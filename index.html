@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaign Page with Dark Mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Configure Tailwind for dark mode class strategy
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body
+    class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-helvetica transition-colors duration-500"
+  >
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center p-6 bg-sky-100 dark:bg-gray-800 shadow"
+    >
+      <div
+        class="text-lg font-bold bg-gradient-to-r from-teal-600 to-cyan-400 bg-clip-text text-transparent"
+      >
+        nowfluence
+      </div>
+      <nav class="flex items-center space-x-4">
+        <button
+          id="theme-toggle"
+          class="ml-4 text-sm bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded"
+        >
+          Toggle Dark Mode
+        </button>
+        <a href="#" class="text-md font-semibold hover:underline">Sign Up</a>
+        <a
+          href="#"
+          class="text-md text-sky-400 dark:text-blue-300 font-semibold hover:underline"
+          >Login</a
+        >
+        <!-- Dark Mode Toggle -->
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-sky-100 dark:bg-gray-800 py-12 transition-colors duration-500"
+    >
+      <div
+        class="container mx-auto md:px-12 px-8 flex flex-col-reverse lg:flex-row items-center gap-8"
+      >
+        <div class="lg:w-2/5">
+          <p class="text-sm uppercase text-gray-500 dark:text-gray-400 mb-2">
+            Brand Name
+          </p>
+          <h1 class="text-3xl font-bold mb-4">Campaign Title Here</h1>
+          <p class="text-gray-600 dark:text-gray-300 mb-6 text-justify">
+            Lorem ipsum dolor amet, consectetur adipiscing elit. Lacus fermentum
+            odio phasellus cras ad erat parturient. Class at et lorem quam ac
+            inceptos netus fermentum vehicula? Duis libero penatibus ante
+            ultricies mattis. Varius dui placerat egestas ex rhoncus per et est.
+            Nisi maecenas curabitur, ultricies auctor bibendum pretium
+            facilisis. Nascetur malesuada sed suscipit consequat tempus molestie
+            turpis posuere.
+          </p>
+          <p class="text-gray-600 dark:text-gray-300 mb-6 text-justify">
+            Habitant tortor integer dui blandit leo aenean. Metus taciti
+            praesent malesuada orci vitae tempus vehicula sollicitudin. Morbi
+            pharetra vestibulum metus; dui efficitur magnis quis class. Finibus
+            auctor maximus, donec rutrum condimentum curabitur commodo?
+            Himenaeos congue nam per sollicitudin maximus ex nostra enim
+            ridiculus. Ipsum litora elit mi aenean vitae parturient tempor
+            aliquam tempor. Justo maximus cursus accumsan at aenean penatibus
+            maecenas.
+          </p>
+          <div class="flex items-center space-x-4">
+            <p class="text-xs text-gray-600 dark:text-gray-400 font-bold">
+              Requested Start Date: MM/DD/YYYY
+            </p>
+            <button
+              class="bg-white text-xs min-w-55 h-6 flex items-center justify-center dark:bg-gray-700 border border-gray-400 dark:border-gray-600 text-gray-800 dark:text-gray-100 font-semibold py-2 px-4 rounded hover:bg-gray-100 dark:hover:bg-gray-600"
+            >
+              View Campaign Brief
+            </button>
+          </div>
+        </div>
+
+        <div class="lg:w-3/5 flex justify-center">
+          <img
+            src="./images/fitness.png"
+            alt="Gym Fitness Campaign"
+            class="rounded-2xl shadow-lg max-h-[550px] aspect-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Deliverables Section -->
+    <section
+      class="bg-gray-50 dark:bg-gray-700 py-12 transition-colors duration-500"
+    >
+      <div class="container mx-auto md:px-12 px-8">
+        <h2 class="text-2xl font-bold mb-8">Deliverables Requested</h2>
+
+        <div class="flex flex-col items-center justify-left space-y-6">
+          <!-- Instagram -->
+          <div class="flex items-center justify-start gap-4">
+            <img
+              src="./images/instagram.png"
+              alt="Instagram"
+              class="w-12"
+            />
+            <h3 class="bg-gradient-to-r from-fuchsia-700 to-yellow-400 bg-clip-text text-transparent font-bold w-20">
+                Instagram
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 text-md max-w-[300px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              quis nisl feugiat.
+            </p>
+          </div>
+
+          <!-- TikTok -->
+          <div class="flex items-center gap-4">
+            <img src="./images/tiktok.png" alt="TikTok" class="w-11" />
+            <h3 class="text-black dark:text-black font-bold w-20">
+                Tiktok
+            </h3>
+            <div>
+              <p class="text-gray-600 dark:text-gray-300 text-md max-w-[300px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                quis nisl feugiat.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <img src="./images/youtube.png" alt="YouTube" class="w-12" />
+            <h3 class="text-red-600 dark:text-red-600 font-bold w-20">
+              Youtube
+            </h3>
+            <di v>
+              <p class="text-gray-600 dark:text-gray-300 text-md max-w-[300px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Information Section -->
+    <section
+      class="bg-white dark:bg-gray-800 py-12 transition-colors duration-500"
+    >
+      <div class="container mx-auto md:px-12 px-8">
+        <h2 class="text-2xl font-bold mb-4">Additional Information</h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Individuals
+          often find themselves driven by a desire to push boundaries, unlocking
+          new potential within themselves. Sed do eiusmod tempor incididunt ut
+          labore et dolore manga aliqua - a phrase that reminds us of the
+          diligence and effort required to achieve greatness
+        </p>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+          <h3 class="text-3xl font-bold text-teal-900 dark:text-white mb-4">
+            Interested in this Campaign?
+          </h3>
+          <p class="text-sm mb-6 font-bold">
+            Apply here to participate in the campaign:
+          </p>
+          <button
+            class="bg-gradient-to-r from-teal-500 to-cyan-400 dark:bg-teal-700 dark:to-cyan-600 hover:bg-teal-500 dark:hover:bg-teal-500 text-white font-bold py-3 px-12 rounded-full transition"
+          >
+            Apply
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-500 dark:text-gray-400 text-sm">
+      © 2025 nowfluence. All rights reserved.
+    </footer>
+
+    <!-- Toggle Script -->
+    <script>
+      const toggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+
+      toggle.addEventListener("click", () => {
+        if (html.classList.contains("dark")) {
+          html.classList.remove("dark"); // Switch to light mode
+        } else {
+          html.classList.add("dark"); // Switch to dark mode
+        }
+      });
+    </script>
+  </body>
+</html>
