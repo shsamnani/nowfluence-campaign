@@ -11,6 +11,7 @@ A basic one page application to showcase tailwind and UI designing skills
 
 - Responsive design using Tailwind CSS 📱
 - Used appropriate meta tags :information_source:
+- Usage of semantic HTML :memo:
 - Bonus - Supports dark-theme :high_brightness:
 
 ## Limitations
